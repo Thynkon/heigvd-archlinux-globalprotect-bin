@@ -1,4 +1,4 @@
-# Maintainer: Darkfish Tech <arch at darkfish dot com dot au>
+# Maintainer: thynkon <thynkon at proton dot me>
 
 pkgname=globalprotect-bin
 pkgver=6.1.3.0
