@@ -2,17 +2,18 @@
 
 This repo contains `PKGBUILD` for Arch Linux for installing Palo Alto Network's 
 GlobalProtect VPN Client app, in order to connect to 
-[University of Melbourne](https://unimelb.edu.au) VPN.
+[HEIG-VD](https://heig-vd.ch) VPN.
 
 
 This `PKGBUILD` requires the source Ubuntu installer package (`.deb`), which can 
-be downloaded from [UoM VPN](https://vpn.unimelb.edu.au).
+be downloaded from [HEIG-VD VPN](https://vpn.heig-vd.ch).
 
-After downloading the necessary package, remember to change the relevant 
-variables, such as `pkgver` and `pkgrel`. Then regenerate the checksums using:
+Download the Linux version and extract its content. Then, copy the `GlobalProtect_UI_focal_deb_<VERSION>.deb` file to the same directory as the `PKGBUILD` file.
+
+Then, run the following command to build and install the package:
 
 ```bash
-$ makepkg -g >> PKGBUILD
+$ makepkg -si
 ```
 
 Update the `sha256sums` appropriately.
